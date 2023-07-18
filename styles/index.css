@@ -1,54 +1,112 @@
  @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,900;1,400;1,700&family=Work+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,600&display=swap');
-/* shared style */
+
+ /* shared style */
  * {
      font-family: 'Lato', sans-serif;
      font-family: 'Work Sans', sans-serif;
 
  }
- .btn-primary{
+
+ .btn-primary {
+     border-radius: 8px;
+     background: #FF900E;
+     color: white;
+     padding: 20px 25px;
+     border: none;
+     font-size: 1.25rem;
+     font-weight: 600;
+     cursor: pointer;
+
+ }
+
+ /* header styles */
+ header {
+     background: rgba(255, 144, 14, 0.10);
+     padding: 50px 240px;
+
+ }
+
+ nav {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+
+ .nav-title {
+     font-size: 2.8rem;
+     font-weight: 700;
+     color: #131313;
+ }
+
+ nav>ul {
+     display: flex;
+ }
+
+ nav li {
+     list-style: none;
+     margin-right: 30px;
+     font-size: 1rem;
+     font-weight: 500;
+ }
+
+ nav li a {
+     text-decoration: none;
+     color: #424242;
+     
+ }
+
+ /* Banner styles */
+ .banner-content {
+     max-width: 800px;
+     margin: 10px auto;
+     text-align: center;
+ }
+
+ .banner-title {
+     font-size: 4rem;
+     font-weight: 800;
+     color: #131313;
+ }
+
+ .banner-desc {
+     color: #727272;
+ }
+ .banner img{
+    width: 100%;
+    margin-top: 20px;
+ }
+
+
+
+
+
+
+ /* responsive style for mobile */
+
+ @media screen and (max-width:576px) {
+    header{
+        padding: 20px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    nav li{
+        text-align: center;
+    }
     
  }
- /* header styles */
- header{
-    background: rgba(255, 144, 14, 0.10);
-    padding: 50px 240px;
+ 
+ /* responsive style for tablet */
 
+ @media screen and (min-width:576px) and (max-width:960px) {
+    header{
+        padding: 20px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    nav li{
+        text-align: center;
+    }
+    
  }
- nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
- }
- .nav-title{
-    font-size: 2.8rem;
-    font-weight: 700;
-    color: #131313;
- }
- nav > ul{
-    display: flex;
- }
- nav li{
-    list-style: none;
-    margin-right: 30px;
-    font-size: 1rem;
-    font-weight: 500;
- }
- nav li a{
-    text-decoration: none;
-    color: #424242;
- }
- /* Banner styles */
- .banner-content{
-    max-width: 800px;
-    margin: 10px auto;
-    text-align: center;
- }
- .banner-title{
-    font-size: 4rem;
-    font-weight: 800;
-    color: #131313;
- }
- .banner-desc{
-    color: #727272;
- }
-
